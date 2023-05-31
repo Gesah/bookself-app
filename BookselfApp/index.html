@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bookshelf Apps</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="box-public">
+      <div class="judul-app">
+        <h1>BookselfApp</h1>
+      </div>
+      <div class="box-form">
+        <div class="input-form">
+          <h2>Tambah Buku</h2>
+          <form id="inputBook">
+            <label for="inputBookTitle">Judul</label>
+            <input
+              type="text"
+              id="inputBookTitle"
+              name="inputBookTitle"
+              placeholder="Judul Buku"
+              required
+            />
+            <label for="inputBookAuthor">Penulis</label>
+            <input
+              type="text"
+              id="inputBookAuthor"
+              name="inputBookAuthor"
+              placeholder="Penulis"
+              required
+            />
+            <label for="inputBookYear">Tahun</label>
+            <input
+              type="number"
+              id="inputBookYear"
+              name="inputBookYear"
+              placeholder="Tahun"
+              required
+            />
+            <label for="inputBookIsComplete">Selesai dibaca?</label>
+            <input
+              type="checkbox"
+              id="inputBookIsComplete"
+              name="inputBookIsComplete"
+            />
+            <button type="submit" id="bookSubmit">Tambahkan buku</button>
+          </form>
+        </div>
+      </div>
+      <div class="pencarian">
+        <label for="searchBook">Cari buku: </label>
+        <input type="text" id="searchBookBtn" placeholder="Cari Judul buku" />
+        <button type="button" onclick="searchBook()">Cari</button>
+      </div>
+      <div class="hasil">
+        <div class="bookshelf">
+          <h2>Daftar Buku Belum Selesai Dibaca</h2>
+          <div id="incompleteBookshelfList" class="bookshelf_list"></div>
+        </div>
+
+        <div class="bookshelf">
+          <h2>Daftar Buku Selesai Dibaca</h2>
+          <div id="completeBookshelfList" class="bookshelf_list"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

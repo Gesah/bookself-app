@@ -1,0 +1,92 @@
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  background-color: wheat;
+}
+.box-public {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.judul-app {
+  width: 50%;
+  display: flex;
+  background-color: wheat;
+  margin: 20px;
+  justify-content: center;
+  border-radius: 50px;
+}
+.box-form {
+  width: 50%;
+  background-color: wheat;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.input-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form,
+label,
+button {
+  margin: 5px;
+  margin-left: 0;
+}
+
+.pencarian {
+  width: 50%;
+  display: flex;
+  background-color: wheat;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.pencarian,
+label,
+button {
+  margin: 5px;
+}
+
+.hasil {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .box-public {
+    width: 100%;
+  }
+
+  .judul-app {
+    width: 60%;
+  }
+  .box-form {
+    width: 60%;
+  }
+  .pencarian {
+    width: 60%;
+  }
+  .hasil {
+    width: 60%;
+  }
+}
